@@ -154,4 +154,27 @@ main article#profileContainer section div#photos img {
   main article section input#searchProfile {
     width: 75%;
   }
+  main article#profileContainer section aside {
+    align-items: center;
+    flex-direction: column;
+  }
+  main article#profileContainer section div#photos {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10px;
+  }
+  main article#profileContainer section h4 {
+    text-align: center;
+  }
+  main article#profileContainer section aside div.content {
+    margin-left: 0;
+  }
+  main article#profileContainer section aside div.content ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  main article#profileContainer section aside div.content ul li {
+    display: flex;
+    flex-direction: column;
+  }
 }
