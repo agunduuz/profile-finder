@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+:root {
+  --main--color: #393646;
+  --second--color: #4f4557;
+  --third--color: #6d5d6e;
+  --color--color: #f4eee0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(
+    to top,
+    #000000,
+    #171214,
+    #241d23,
+    #302934,
+    #393646
+  );
+  min-height: 100vh;
+  /* display: flex;
+  background-size: cover;
+  background-position: center;
+
+  align-items: center;
+  flex-direction: column; */
+
+  color: var(--color--color);
+  font-size: 1.25rem;
+}
+
+header {
+  background-color: var(--main--color);
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+header nav a.navbar-brand {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--third--color);
+  font-weight: 600;
+  font-family: inherit;
+}
+main {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+main article {
+  margin: 20px 0;
+  width: 100%;
+}
+main article section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main article section h2 {
+  color: var(--color--color);
+  font-size: 2.25rem;
+  text-align: center;
+}
+main article section p {
+  font-size: 1.5rem;
+  color: var(--third--color);
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: center;
+}
+main article section input#searchProfile {
+  width: 33%;
+  margin-top: 10px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px 10px 5px 5px;
+  color: var(--main--color);
+  font-size: 1.75rem;
+  font-family: inherit;
+  font-weight: 600;
+}
+main article section span#alert {
+  display: none;
+  width: 75%;
+  text-align: center;
+  background-color: #ff6000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 10px 0 10px 0;
+}
+main article#profileContainer section {
+  display: flex;
+  flex-direction: column;
+}
+main article#profileContainer section aside {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+}
+
+main article#profileContainer section aside div.img {
+  width: 250px;
+}
+
+main article#profileContainer section aside div.img img {
+  width: 250px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+main article#profileContainer section aside div.content {
+  margin-left: 20px;
+}
+main article#profileContainer section h4 {
+  font-size: 2.75rem;
+}
+main article#profileContainer section aside div.content ul {
+  margin-top: 20px;
+}
+main article#profileContainer section aside div.content ul li {
+  margin-top: 10px;
+  list-style: none;
+  font-size: 1.75rem;
+}
+main article#profileContainer section aside div.content ul li span {
+  font-weight: 600;
+  color: #ff6000;
+}
+
+main article#profileContainer section div#photos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+main article#profileContainer section div#photos img {
+  width: 200px;
+}
+@media screen and (max-width: 1280px) {
+  main article section input#searchProfile {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main article section input#searchProfile {
+    width: 75%;
+  }
+}
